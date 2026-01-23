@@ -1,0 +1,69 @@
+@import"tailwindcss";
+.container{
+    background-color: rgba(26, 11, 46, 1);
+    width: 1600px;
+    height: 547px;
+    justify-items: center;
+    
+}
+.section-title{
+    font-size:x-large;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.content,.next{
+    padding-top: 16px;
+    color:rgba(255, 255, 255, 1);
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom:20px ;
+}
+.box{
+    padding-top: 160px;
+   
+    display: flex;
+    gap:80px;
+    color: #00FF88;
+    border-top:1px solid gray;
+}
+.word{
+    color: var(--#00FF88, rgba(0, 255, 136, 1));
+
+font-family: Inter;
+
+font-size: 48px;
+font-weight: 900;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+
+
+@media screen and  (max-width: 576px) {
+   
+    .content, .next {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 24px;
+        text-align: center; }
+
+   
+    .box {
+        padding-top: 40px; 
+        
+        gap: 20px; 
+       grid-template-columns: repeat(2,1fr);
+        align-items: start;
+        
+    }
+
+    .word {
+        font-size: 32px;
+      
+    }
+}
